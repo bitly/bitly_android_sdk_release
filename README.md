@@ -17,13 +17,19 @@ To create the Digital Asset Links JSON file, which would be located at https://y
 1. Add the following to your `build.gradle` file
 
   ```
-  compile 'com.bitly:bitlysdk:+'
+  implementation 'com.bitly:bitlysdk:1.0.x'
   ```
-2. You may need to also add JCenter as a repository
+2. You may need to also add GitHub as a repository
 
   ```
   repositories {
-    jcenter()
+     maven {
+        url "https://maven.pkg.github.com/bitly/bitly_android_sdk_release"
+        credentials{
+            username = project.findProperty("gpr.user") ?: System.getenv("GH_USERNAME")
+            password = project.findProperty("gpr.key") ?: System.getenv("GH_TOKEN")
+        }
+    }
   }
   ```  
 
