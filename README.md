@@ -1,7 +1,5 @@
 # Bitly Android SDK
 
-![Releases](https://img.shields.io/github/release/bitly/bitly_android_sdk.svg) ![Bintray](https://img.shields.io/bintray/v/mobilebitly/maven/bitly.svg)  [![Build Status](https://travis-ci.com/bitly/bitly_android_sdk.svg?token=GQk2M5gzMUKUJCESKF18&branch=master)](https://travis-ci.com/bitly/bitly_android_sdk)
-
 ## Getting Started
 Before integrating the SDK you will need to configure your mobile app in Bitly. To do this go to Brand Manager -> Mobile Apps. When creating the Android app you will need to provide the `sha256_cert_fingerprints` for your app. You can determine the value using this command
                                                                                                                                                                                                                                    
